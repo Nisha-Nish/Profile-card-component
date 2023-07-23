@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-dest-blue: hsl(229, 23%, 23%);
+  --dark-gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background: var(--dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.top-img {
+  position: absolute;
+  /* width: 450px; */
+  transform: translateX(-50%) translateY(-40%);
+}
+
+.bottom-img {
+  position: absolute;
+  /* width: 450px; */
+  /* bottom: 0;
+  right: 0; */
+  transform: translateX(50%) translateY(50%);
+}
+/* .top-img {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 80%;
+}
+
+.bottom-img {
+  position: absolute;
+  bottom: -80%;
+  right: -16%;
+} */
+
+/* .container::before {
+  content: url('./images/bg-pattern-top.svg');
+  position: absolute;
+  top: -62%;
+  left: -20%;
+}
+
+.container::after {
+  content: url('./images/bg-pattern-bottom.svg');
+  position: absolute;
+  bottom: -80%;
+  right: -16%;
+} */
+
+.card {
+  background: #fff;
+  width: 350px;
+  max-width: 330px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .body .user-img {
+  border-radius: 50%;
+  margin: auto;
+  margin-top: -50px;
+}
+
+.card .body h1 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--very-dark-dest-blue);
+}
+
+.card .body h1 span,
+p {
+  color: var(--dark-gray-blue);
+  font-weight: 400;
+}
+
+.card .body p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.card .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 79%);
+  padding: 1rem 1rem 1.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.card .footer .box {
+  text-align: center;
+}
+
+.card .footer .box h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--very-dark-dest-blue);
+  margin: 0.4rem 0;
+}
+
+.card .footer .box p {
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+
+/* @media only screen and (max-width: 768px) {
+  .container::before {
+    top: -100%;
+    left: -190%;
+  }
+
+  .container::after {
+    bottom: -100%;
+    right: -190%;
+  }
+} */
